@@ -22,14 +22,14 @@ const Navbar = () => {
   return (
     <div className="w-full cursor-pointer">
       {/* Header Top - Contact Info */}
-      <div className="bg-gray-100 border-b border-gray-200">
+      <div className="bg-gray-100 p-2 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-10 text-sm">
+          <div className="flex items-center   justify-between h-10 text-sm">
             {/* Contact Info - Hidden on mobile */}
             <div className="hidden md:flex items-center space-x-4 text-gray-600">
               <div className="flex items-center space-x-2">
-                <Phone className="w-4 h-4" />
-                <span>Tel: 023 216 725/6, 078 311 111, 092 111 168, 078 911 166</span>
+                <Phone className="w-8 h-8" />
+                <span className="text-center">Tel: 023 216 725/6, 078 311 111, 092 111 168, 078 911 166</span>
               </div>
             </div>
 
@@ -43,8 +43,8 @@ const Navbar = () => {
       </div>
 
       {/* Main Header */}
-      <div className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="bg-white border-b text-center  h-30 border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-3 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Mobile Menu Button */}
             <button
@@ -61,7 +61,7 @@ const Navbar = () => {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div className="hidden sm:block">
-                  <h1 className="text-2xl font-bold text-blue-600">SOKLY</h1>
+                  <h1 className="text-3xl font-bold text-[#144194]">SOKLY</h1>
                   <p className="text-xs text-gray-500">Your Perfect Choice</p>
                 </div>
               </div>
@@ -118,13 +118,13 @@ const Navbar = () => {
       </div>
 
       {/* Navigation Bar */}
-      <nav className="bg-blue-600  cursor-pointer">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="bg-[#144194]  text-lg p-1 cursor-pointer">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8">
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8 h-12">
+          <div className="hidden lg:flex items-center  space-x-8 h-12">
             {navigationItems.map((item, index) => (
               <div key={index} className="relative group">
-                <button className="flex cursor-pointer items-center space-x-1 text-white hover:text-blue-200 transition-colors py-3">
+                <button className="flex cursor-pointer items-center  space-x-1 text-white hover:bg-[#1f1494] transition-colors py-3">
                   <span>{item.name}</span>
                   {item.hasDropdown && (
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
